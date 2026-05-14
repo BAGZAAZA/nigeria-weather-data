@@ -1,0 +1,148 @@
+Create a production-ready Nigerian gazetteer dataset optimized for a weather forecasting and crop intelligence platform.
+
+OBJECTIVE:
+Generate a scalable Nigerian geographic intelligence dataset optimized for:
+
+* weather forecasting
+* Nigerian location search
+* fuzzy matching
+* coordinate-based weather querying
+* crop recommendation systems
+* rainfall analysis
+* agricultural intelligence
+* PostgreSQL import
+* future ML integration
+
+REQUIREMENTS:
+
+1. Include:
+
+* all 36 Nigerian states
+* Federal Capital Territory (FCT)
+* major LGAs
+* major cities
+* major towns
+* important agricultural regions
+
+2. For EVERY location include:
+
+* id
+* type (state, lga, town, village)
+* country
+* state
+* lga (where applicable)
+* name
+* normalized_name
+* aliases
+* search keywords
+* latitude
+* longitude
+* region
+* timezone
+* climate_zone
+* rainfall_pattern
+* farming_season
+* major_crops
+* priority score
+
+3. Add:
+
+* common spelling mistakes
+* abbreviations
+* alternative spellings
+* Nigeria-specific search variations
+
+Example:
+
+* Ilorin
+* llorin
+* Ilorin Kwara
+* ilorin nigeria
+
+4. Coordinates must be accurate enough for:
+
+* weather APIs
+* rainfall forecasting
+* crop recommendation systems
+
+5. Optimize structure for:
+
+* fast search
+* fuzzy matching
+* scalable database import
+* coordinate resolution
+* indexed PostgreSQL storage
+
+REQUIRED JSON STRUCTURE:
+
+{
+"states": [],
+"lgas": [],
+"towns": []
+}
+
+EXAMPLE FORMAT:
+
+{
+"id": "kwara-ilorin",
+"type": "town",
+"country": "Nigeria",
+"state": "Kwara",
+"lga": "Ilorin South",
+"name": "Ilorin",
+"normalized_name": "ilorin",
+"aliases": [
+"ilorin kwara",
+"llorin",
+"ilorin city",
+"ilorin nigeria"
+],
+"keywords": [
+"agriculture",
+"north central",
+"capital"
+],
+"priority": 8,
+"region": "North Central",
+"timezone": "Africa/Lagos",
+"climate_zone": "Tropical Savanna",
+"rainfall_pattern": "Seasonal",
+"major_crops": [
+"maize",
+"cassava",
+"yam"
+],
+"farming_season": [
+"April",
+"May",
+"June"
+],
+"coordinates": {
+"lat": 8.4966,
+"lng": 4.5421
+}
+}
+
+OUTPUT REQUIREMENTS:
+
+* Generate valid JSON only
+* Make dataset production-ready
+* Avoid duplicate entries
+* Keep naming consistent
+* Ensure coordinates are numeric
+* Include all state capitals
+* Include major agricultural towns
+* Include important farming regions
+* Optimize for future PostgreSQL/PostGIS import
+
+IMPORTANT:
+
+* Do NOT use placeholder data
+* Use realistic Nigerian geographic data
+* Optimize for integration into:
+
+  * weather systems
+  * crop intelligence
+  * rainfall forecasting
+  * Nigerian agricultural analytics
+* Keep the structure scalable for future AI and ML features
